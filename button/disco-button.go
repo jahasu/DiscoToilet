@@ -257,7 +257,7 @@ func main() {
 					power = 1
 					relay1.Low()
 					relay2.High()
-					cmdMusic := exec.Command("cvlc", "--random", "--play-and-exit", "/home/pi/Music/a_one_tap.mp3")
+					cmdMusic := exec.Command("cvlc", "--random", "--play-and-exit", "/home/pi/Desktop/DiscoToilet/music/a_one_tap.mp3")
 					cmdSpeaker := exec.Command("amixer", "-c", "2", "set", "Mic", "0%")
 					fmt.Println("On")
 					cmdMusicErr := cmdMusic.Start()
@@ -290,7 +290,7 @@ func main() {
 
 					// time.Sleep(1000 * time.Millisecond)
 
-					cmdMusic := exec.Command("cvlc", "--random", "--play-and-exit", "/home/pi/Music/a_two_tap.mp3")
+					cmdMusic := exec.Command("cvlc", "--random", "--play-and-exit", "/home/pi/Desktop/DiscoToilet/music/a_two_tap.mp3")
 					cmdSpeaker := exec.Command("amixer", "-c", "2", "set", "Mic", "0%")
 					fmt.Println("On")
 					cmdMusicErr := cmdMusic.Start()
